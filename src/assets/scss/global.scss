@@ -1,0 +1,123 @@
+@import './mixins';
+@import './variables';
+
+body{
+   font-family: 'Proxima Nova', sans-serif;
+   @include adaptiv-value('font-size',24,18,0);
+   line-height: 130%;
+   font-style: normal;
+   font-weight: 400;
+   color: #2D3748;
+}
+
+.d-f{
+   display: flex;
+}
+
+.d-g{
+   display: grid;
+}
+
+.jc-sb{
+   justify-content: space-between;
+}
+
+.jc-c{
+   justify-content: center;
+}
+
+.ai-c{
+   align-items: center;
+}
+
+.fd-c{
+   flex-direction:column;
+}
+
+.fw-w{
+   flex-wrap: wrap;
+}
+
+
+.ta-c{
+   text-align: center;
+}
+
+.ta-e{
+   text-align: end;
+}
+
+.gtc-2{
+   grid-template-columns: repeat(2,1fr);
+
+   @include breakpoint(768px){
+      grid-template-columns: 1fr;
+   }
+}
+
+.gtc-3{
+   grid-template-columns: repeat(3,1fr);
+
+   @include breakpoint(768px){
+      grid-template-columns: 1fr;
+   }
+}
+
+.gtc-4{
+   grid-template-columns: repeat(4,1fr);
+
+   @include breakpoint(768px){
+      grid-template-columns: repeat(2,1fr);
+   }
+
+   @include breakpoint(425px){
+      grid-template-columns: 1fr;
+   }
+}
+
+.button{
+   @include adaptiv-value('padding-top',15,10,0);
+   @include adaptiv-value('padding-bottom',15,10,0);
+   font-weight: 500;
+   @include adaptiv-value('font-size',20,16,0);
+   line-height: 125%;
+   font-family: 'Blogger Sans';
+   border-radius: 30px;
+   background: $yellow;
+   border:none;
+   cursor: pointer;
+   color: #1A202C;
+   transition: 0.2s;
+
+   &:hover{
+   box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+   }
+}
+
+.box-shadow{
+   box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+}
+
+.title{
+   font-family: 'Blogger Sans';
+   font-style: normal;
+   font-weight: 500;
+   @include adaptiv-value('font-size',60,36,0);
+   line-height: 125%;
+}
+
+.section{
+   @include adaptiv-value('padding-top',150,75,0)
+}
+
+.fz34{
+   @include adaptiv-value('font-size',34,24,0);
+}
+
+.fz24{
+   @include adaptiv-value('font-size',24,18,0);
+}
+
+.fz20{
+   @include adaptiv-value('font-size',20,16,0);
+}

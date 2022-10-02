@@ -1,0 +1,122 @@
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1600));
+  line-height: 130%;
+  font-style: normal;
+  font-weight: 400;
+  color: #2D3748;
+}
+
+.d-f {
+  display: flex;
+}
+
+.d-g {
+  display: grid;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.fw-w {
+  flex-wrap: wrap;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-e {
+  text-align: end;
+}
+
+.gtc-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .gtc-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gtc-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .gtc-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gtc-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .gtc-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 425px) {
+  .gtc-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.button {
+  padding-top: calc(10px + 5 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(10px + 5 * ((100vw - 320px) / 1600));
+  font-weight: 500;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  line-height: 125%;
+  font-family: "Blogger Sans";
+  border-radius: 30px;
+  background: #FFD324;
+  border: none;
+  cursor: pointer;
+  color: #1A202C;
+  transition: 0.2s;
+}
+.button:hover {
+  box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+}
+
+.title {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(36px + 24 * ((100vw - 320px) / 1600));
+  line-height: 125%;
+}
+
+.section {
+  padding-top: calc(75px + 75 * ((100vw - 320px) / 1600));
+}
+
+.fz34 {
+  font-size: calc(24px + 10 * ((100vw - 320px) / 1600));
+}
+
+.fz24 {
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1600));
+}
+
+.fz20 {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+}
